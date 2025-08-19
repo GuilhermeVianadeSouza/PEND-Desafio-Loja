@@ -30,7 +30,6 @@ header h2 {
 }
 
 header div {
-    background-color: blue;
     width: 50%;
     position: absolute;
 }
@@ -38,13 +37,12 @@ header div {
 header button{
     width: 300px;
     height: 40px;
-    align-items:initial;
+    align-items:left;
     border-radius: 60px;
 }
 
 
 .icones {
-  
-    position: absolute;
-
+    width: 100%;
+    left: 300px;
 }
