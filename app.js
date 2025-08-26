@@ -3,10 +3,14 @@
 import produtos from "./produtos_atualizados.json" with {type: "json"}
 
 //Função de criação e mostragem do card Promorcional
-function cardPromorcional(){
-    const promorcional = document.getElementById('promorcional')
+// function cardPromorcional(){
+//     const promorcional = document.getElementById('promocional')
     
-}
+//     const tela = document.createElement('div')
+//     container.classList.add('promocional')
+
+//     tela.appendChild()
+// }
 
 function converterClassificacao(classificacao){
     const estrela = {
@@ -23,7 +27,7 @@ function converterClassificacao(classificacao){
 function mostrarProdutos(){
     const product = document.getElementById('card')
     //Criado uma variavel constante para que eu consiga utilizar o caminho da imagem sem alterar no JSON
-    const caminhoImagem = './img/'
+    const caminhoImagem = './img/' //boa prática?
 
     produtos.forEach(func =>{
 
@@ -59,6 +63,6 @@ function mostrarProdutos(){
     })
 }
 
-cardPromorcional()
+// cardPromocional()
 converterClassificacao()
 mostrarProdutos()

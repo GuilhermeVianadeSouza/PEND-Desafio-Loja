@@ -52,6 +52,7 @@ header button{
     display: grid;
     overflow-x: auto;
     grid-auto-flow: column;
+    align-items: stretch;
     grid-auto-columns: 330px;
     max-width: 2000px;
     padding: 20px;
