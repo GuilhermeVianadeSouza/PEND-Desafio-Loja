@@ -2,8 +2,27 @@
 
 import produtos from "./produtos_atualizados.json" with {type: "json"}
 
+//Função de criação e mostragem do card Promorcional
+function cardPromorcional(){
+    const promorcional = document.getElementById('promorcional')
+    
+}
+
+function converterClassificacao(classificacao){
+    const estrela = {
+        1: "★☆☆☆☆",
+      2: "★★☆☆☆",
+      3: "★★★☆☆",
+      4: "★★★★☆",
+      5: "★★★★★"
+        }
+    return estrela[classificacao];
+}
+
+//Função para mostrar cada um dos card
 function mostrarProdutos(){
     const product = document.getElementById('card')
+    //Criado uma variavel constante para que eu consiga utilizar o caminho da imagem sem alterar no JSON
     const caminhoImagem = './img/'
 
     produtos.forEach(func =>{
@@ -21,7 +40,7 @@ function mostrarProdutos(){
     descricao.textContent = func.descricao
 
     const avaliacao = document.createElement('p')
-    avaliacao.textContent = func.classificacao
+    avaliacao.textContent = converterClassificacao(func.classificacao)
 
     const category = document.createElement('h3')
     category.textContent = func.categoria
@@ -38,7 +57,8 @@ function mostrarProdutos(){
 
     product.appendChild(container)
     })
-
 }
 
+cardPromorcional()
+converterClassificacao()
 mostrarProdutos()
