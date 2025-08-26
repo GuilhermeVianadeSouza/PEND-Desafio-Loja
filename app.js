@@ -20,14 +20,14 @@ function mostrarProdutos(){
     const descricao = document.createElement('a')
     descricao.textContent = func.descricao
 
-    const avaliacao = document.createElement('a')
+    const avaliacao = document.createElement('p')
     avaliacao.textContent = func.classificacao
 
-    const category = document.createElement('a')
+    const category = document.createElement('h3')
     category.textContent = func.categoria
     
-    const preco = document.createElement('a')
-    preco.textContent = func.preco
+    const preco = document.createElement('p2')
+    preco.textContent = "R$:" + func.preco
 
     container.appendChild(imagens)
     container.appendChild(nome)
